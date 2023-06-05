@@ -1,0 +1,8 @@
+<h1>Student List</h1>
+<ul>
+  {% for item in student_grades %}
+    <li>{{ item.student.name }} - Grade: {{ item.grade }}</li>
+  {% empty %}
+    <li>No students found.</li>
+  {% endfor %}
+</ul>

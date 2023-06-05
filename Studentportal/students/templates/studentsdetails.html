@@ -1,0 +1,36 @@
+
+{%block body_block%}
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-`10">
+        <table class="table">
+            <tr>
+                <th>Student_Name</th>
+                <th>Roll Number</th>
+                <th>Date of Birth</th>
+                <th>Mark</th>
+            </tr>
+            {%for student in Students%}
+
+            <tr>
+                <td>{{student.name}}</td>
+                <td>{{student.roll_number}}</td>
+                <td>{{student.date_of_birth}}</td>
+                <td>{{student.marks}}</td>
+
+
+
+
+            </tr>
+            {%endfor%}
+        </table>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+
+
+
+
+
+{%endblock%}

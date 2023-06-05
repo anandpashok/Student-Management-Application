@@ -1,0 +1,8 @@
+<h1>Add Marks</h1>
+<p>Student: {{ student.name }}</p>
+<form method="post" action="{% url 'add_marks' pk=student.pk %}">
+  {% csrf_token %}
+  <label for="marks">Marks:</label>
+  <input type="text" id="marks" name="marks">
+  <button type="submit">Add Marks</button>
+</form>
